@@ -1,0 +1,65 @@
+*{
+    color: white;
+   text-transform: capitalize;
+    margin: auto;
+    padding: 10px;
+}
+body{
+   margin: 0;
+   background: url('images/theweather.jpg'); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: sans-serif;
+   display: flex;
+   justify-content: space-between;
+   transition: 15s ;
+}
+
+input[type='search']{
+    background-color: transparent;
+    height: 50px;
+    font-size: 22px;
+    border: 0px;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+h2{
+    background: transparent;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: white;
+}
+p{
+    text-transform: capitalize;
+    color: rgb(172, 169, 169);
+}
+.container{
+    background-color: #0000007c;
+    border-radius: 6px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infomation{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+background-color: #000000ba;
+border-radius: 6px;
+}
+
+img{
+    background-position: center;
+}
+/* @media screen and (min-width : 550px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+} */

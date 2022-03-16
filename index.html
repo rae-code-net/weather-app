@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Weather.css">
+    <link rel="shortcut icon" href="images/weather-icon.png" type="image/x-icon">
+</head>
+<body>
+ <div class="container">
+     
+    <span id="description"></span>
+    <div id="imgplace">
+        <img src="http://openweathermap.org/img/wn/01d@2x.png">
+    </div>
+    <p id="place"></p>
+        <h4 id="timer"> </h4><h4 id="time"></h4> 
+       
+       <input type="search" name="User-location"  id="User-location" onchange="getWeather()" placeholder="Type the location of the place" >
+    </div>
+
+    <div class="infomation">
+        <h2>Temprature</h2>
+        <p id="degrees" ></p>
+        <h2>Pressure</h2>
+        <p id="pressure"></p>
+        <h2>Humidity</h2>
+        <p id="humidity"></p>
+        <h2>Wind </h2>
+        <p id="wind"></p>
+        <h2>Feels like</h2>
+        <p id="feel"></p>
+        <h2>Chance Of Rain</h2>
+        <p id="rain"></p>
+        <h2>Sunrise</h2>
+        <p id="sunrise"></p>
+        <h2>Sunset</h2>
+        <p id="sunset"></p>
+    </div>
+  
+    <script src="Weather.js"></script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCSU4MrPuXRpGifSYEd2H7UZdykIhgvLac"></script>
+</body>
+</html>
